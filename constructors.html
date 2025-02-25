@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h2>JavaScript Objects</h2>
 
-<h2>JavaScript Objects</h2>
+    <script>
+      function Vehicle(name, maker) {
+        this.name = name;
+        this.maker = maker;
+      }
 
-<script>
+      var car1 = new Vehicle("Focus", "Ford"); // 'Focus', 'Ford'
+      var car2 = new Vehicle("Elantra", "Hyundai"); //'Elantra', 'Hyundai'
 
-    function Vehicle(name, maker) { 
-        this.name = name; 
-        this.maker = maker; 
-    } 
-
-    var car1 = new Vehicle(); // 'Focus', 'Ford'
-    var car2 = new Vehicle(); //'Elantra', 'Hyundai'
-
-    console.log(car1.name); // Output: Focus
-    console.log(car2.name); // Output: Elantra
-
-
-</script>
-
-
-</body>
+      console.log(car1.name); // Output: Focus
+      console.log(car2.name); // Output: Elantra
+    </script>
+  </body>
 </html>

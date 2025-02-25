@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>VUE Demo - Instance</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="vueapp">{{greeting}}</div>
 
-<div id="vueapp">
-    
-</div>
-
-<script>
-
-</script>
-    
-</body>
+    <script>
+      var app = new Vue({
+        el: "#vueapp",
+        data: {
+          greeting: "Hello World!",
+        },
+      });
+    </script>
+  </body>
 </html>
-
